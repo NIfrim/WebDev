@@ -934,6 +934,12 @@ p {
   #mgp > .container > div {
     padding: 1em;
   }
+  #mgp > .container div figure {
+    width: 100%;
+  }
+  #mgp > .container div figure img {
+    width: 100%;
+  }
 
 
   #mgp > .container .row1 * {
@@ -1066,12 +1072,9 @@ p {
     flex-flow: column nowrap;
     width: 100vw;
     height: 100%;
-    padding: 0 1em 1em 1em;
+    padding: 0 1em 0 1em;
   }
-  #log > .container div {
-    width: 100vw;
-  }
-  #log > .container .wrapper {
+  #log > .container > div .wrapper {
     max-width: 960px;
     margin: 0 auto;
     display: -webkit-box;
@@ -1081,10 +1084,21 @@ p {
     flex-flow: column nowrap;
     align-items: center;
   }
+  #log > .container > div .wrapper figure {
+    width: 100%;
+  }
+  #log > .container > div .wrapper figure img {
+    width: 100%;
+  }
 
 
   #log > .container div > * {
     max-width: 960px;
+    flex: 0 1;
+  }
+  #log > .container > div {
+    padding: 2em;
+    width: 100vw;
   }
 
 
@@ -1100,30 +1114,40 @@ p {
   #log > .container > .row1 > .wrapper h1 {
     text-decoration: underline;
   }
-  #log > .container > .row1 > .wrapper h2 {
+  #log > .container > div > .wrapper h2 {
     margin-left: 1em;
     align-self: flex-start;
   }
-  #log > .container > .row1 > .wrapper p {
+  #log > .container > div > .wrapper p {
     margin-left: 3em;
     align-self: flex-start;
   }
 
+  #log > .container > .row2 {
+    background-color: #eeee;
+  }
   #log > .container .row2 .wrapper > * {
     padding:  0.5em;
-    color: var(--mainFontColor);
-  }
-  #log > .container > .row2 > .wrapper h2 {
-    margin-left: 1em;
-    align-self: flex-start;
   }
   #log > .container > .row2 > .wrapper h3 {
     margin-left: 3em;
     align-self: flex-start;
   }
-  #log > .container > .row2 > .wrapper p {
+
+  #log > .container .row3 .wrapper > * {
+    padding:  0.5em;
+  }
+  #log > .container > .row3 > .wrapper h3 {
     margin-left: 3em;
     align-self: flex-start;
+  }
+
+  #log > .container > .row4 {
+    background-color: #52ba98;
+  }
+  #log > .container .row4 .wrapper > * {
+    padding:  0.5em;
+    color: var(--lightFontColor);
   }
 
 
