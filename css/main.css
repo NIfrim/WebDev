@@ -139,6 +139,7 @@ p {
     display: -webkit-flex;
     display: flex;
     border-right: 1px solid #c2c2c2;
+    position: relative;
   }
   header .navigation li {
     display: -webkit-box;
@@ -188,17 +189,16 @@ p {
     grid-row: 1/2;
     grid-column: 1/2;
   }
-  header .navigation li:nth-last-child(-n + 7) label::before{
-    content: "";
-    display: block;
-    width: 0;
-    height: 3px;
-    background-color: #c86c61;
-    transition: all .5s ease;
-  }
-  header .navigation .menu-icon label::before {
-    height: 0 !important;
-  }
+  header .navigation li:nth-last-child(-n + 7) span{
+  position: absolute;
+  display: block;
+  background-color: #F76F5F;
+  top: 0;
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  transition: all .2s ease;
+}
 
   header .mobile-nav {
     transform-origin: top;
@@ -355,14 +355,15 @@ p {
     margin-bottom: 1em;
   }
   #about .team-wrap .container section h1 {
-    color: var(--lightFontColor);
+    color: #F76F5F;
+    margin: 1em 0 0.5em 1em;
   }
   #about .team-wrap .container section h2 {
-    color: var(--lightFontColor);
+    color: #F76F5F;
+    margin-left: 1em;
   }
   #about .team-wrap .container section p {
     padding: 0.5em;
-    margin-bottom: 1.5em;
     color: var(--lightFontColor);
   }
   #about .team-wrap .container section .quote {
@@ -377,31 +378,53 @@ p {
   }
   #about .team-wrap .container section .quote * {
     color: var(--lightFontColor);
+    font-size: 1.4em;
   }
   #about .team-wrap .container section .portrait {
     width: 100%;
     max-width: 70%;
   }
   #about .team-wrap .container section:nth-child(1) .portrait {
-    background-image: url("../images/team/modou.jpg");
-    background-position: bottom;
+    background-image: url("../images/team/nicolae.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   #about .team-wrap .container section:nth-child(2) .portrait {
-    background-image: url("../images/team/adam.jpg");
-    background-position: bottom;
+    background-image: url("../images/team/modou.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  #about .team-wrap .container section:nth-child(2) .portrait h1,
+  #about .team-wrap .container section:nth-child(2) .portrait h2 {
+    color: var(--lightFontColor);
   }
   #about .team-wrap .container section:nth-child(3) .portrait {
     background-image: url("../images/team/daniel.jpg");
-    background-position: bottom;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #about .team-wrap .container section:nth-child(4) .portrait {
+    background-image: url("../images/team/adam.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
 
+  #about .team-wrap .container section .bio {
+    width: 100%;
+    max-width: 70%;
+    min-height: 250px;
+    display: -webkit-box;
+    display: -ms-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   #about .team-wrap .container section .social {
     width: 100%;
     max-width: 28%;
@@ -414,16 +437,30 @@ p {
   }
   #about .team-wrap .container section .social ul li {
     background-color: #52ba7f;
-    border-bottom: 1px solid #52ba98;
+    border-bottom: 1px solid #32745f;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
   }
   #about .team-wrap .container section .social ul li * {
-    font-size: 1.3em;
     padding: 0.2em;
     color: var(--lightFontColor);
   }
-  #about .team-wrap .container section .bio {
-    width: 100%;
-    max-width: 70%;
+  #about .team-wrap .container section .social ul li:nth-child(1) {
+    font-size: 1.2em;
+  }
+  #about .team-wrap .container section .social ul li:nth-child(2) {
+    font-size: 1.7em;
+  }
+  #about .team-wrap .container section .social ul li:nth-child(3) {
+    font-size: 1.7em;
+  }
+
+  #about .team-wrap .container section .social ul li:hover {
+    background-color: #429874;
   }
 
 
@@ -1830,8 +1867,11 @@ p {
 
 /* EFFECTS */
   /*HEADER */
-  header .navigation li:nth-last-child(-n + 7) label:hover::before {
-    width: 100%;
+  header .navigation li:nth-last-child(-n + 7) label:hover ~ span {
+    height: 100%;
+  }
+  header .navigation li:nth-last-child(-n + 7) label:hover {
+    color: #fafafa;
   }
 
   /* MAIN SECTION */
