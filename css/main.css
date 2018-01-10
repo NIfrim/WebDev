@@ -7,7 +7,7 @@
   font-family: 'Overlock', cursive;
   text-decoration: none;
   color: var(--mainFontColor, #C49832);
-  position: relative;
+  /*position: relative;*/
 }
 
 h1 {
@@ -276,7 +276,6 @@ p {
     display: -webkit-flex;
     display: flex;
     flex-flow: column nowrap;
-    min-height: 700px;
     flex: 0 1 auto;
     width: 100%;
     align-items: center;
@@ -315,6 +314,116 @@ p {
   }
   #about .banner .container .img-left {
     align-self: center;
+  }
+
+  #about .video-wrap h1 {
+    margin-top: 1em;
+  }
+  #about .video-wrap .process {
+    margin: 1em;
+  }
+
+  #about .team-wrap {
+    background-color: #32745f;
+    padding: 2em;
+  }
+  #about .team-wrap h1 {
+    color: var(--lightFontColor);
+  }
+  #about .team-wrap .container {
+    width: 100%;
+    max-width: 960px;
+    display: -webkit-box;
+    display: -ms-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+  #about .team-wrap .container section {
+    display: -webkit-box;
+    display: -ms-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1em;
+  }
+  #about .team-wrap .container section div {
+    background-color: #52ba98;
+    margin-bottom: 1em;
+  }
+  #about .team-wrap .container section h1 {
+    color: var(--lightFontColor);
+  }
+  #about .team-wrap .container section h2 {
+    color: var(--lightFontColor);
+  }
+  #about .team-wrap .container section p {
+    padding: 0.5em;
+    margin-bottom: 1.5em;
+    color: var(--lightFontColor);
+  }
+  #about .team-wrap .container section .quote {
+    width: 100%;
+    max-width: 28%;
+    min-height: 300px;
+    display: -webkit-box;
+    display: -ms-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+  }
+  #about .team-wrap .container section .quote * {
+    color: var(--lightFontColor);
+  }
+  #about .team-wrap .container section .portrait {
+    width: 100%;
+    max-width: 70%;
+  }
+  #about .team-wrap .container section:nth-child(1) .portrait {
+    background-image: url("../images/team/modou.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #about .team-wrap .container section:nth-child(2) .portrait {
+    background-image: url("../images/team/adam.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #about .team-wrap .container section:nth-child(3) .portrait {
+    background-image: url("../images/team/daniel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  #about .team-wrap .container section .social {
+    width: 100%;
+    max-width: 28%;
+  }
+  #about .team-wrap .container section .social ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+  #about .team-wrap .container section .social ul li {
+    background-color: #52ba7f;
+    border-bottom: 1px solid #52ba98;
+  }
+  #about .team-wrap .container section .social ul li * {
+    font-size: 1.3em;
+    padding: 0.2em;
+    color: var(--lightFontColor);
+  }
+  #about .team-wrap .container section .bio {
+    width: 100%;
+    max-width: 70%;
   }
 
 
@@ -935,6 +1044,10 @@ p {
     padding: 1em;
   }
 
+  #mgp > .container > div figure img {
+    width: 100%;
+  }
+
 
   #mgp > .container .row1 * {
     color: var(--lightFontColor);
@@ -1082,6 +1195,9 @@ p {
     align-items: center;
   }
 
+  #log > .container > div .wrapper figure img {
+    width: 100%;
+  }
 
   #log > .container div > * {
     max-width: 960px;
