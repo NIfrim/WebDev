@@ -35,7 +35,7 @@ p {
 }
 
 *::selection {
-  background-color: #c86c61;
+  background-color: #F76F5F;
   color: white;
 }
 ::-webkit-scrollbar {
@@ -324,8 +324,8 @@ p {
   }
 
   #about .team-wrap {
-    background-color: #32745f;
-    padding: 2em;
+    background-color: #337870;
+    padding: 2em 0;
   }
   #about .team-wrap h1 {
     color: var(--lightFontColor);
@@ -349,6 +349,9 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 1em;
+  }
+  #about .team-wrap .container section div .fa {
+    color: white;
   }
   #about .team-wrap .container section div {
     background-color: #52ba98;
@@ -375,6 +378,7 @@ p {
     display: -webkit-flex;
     display: flex;
     align-items: center;
+    background-color: #47a4a2;
   }
   #about .team-wrap .container section .quote * {
     color: var(--lightFontColor);
@@ -383,6 +387,7 @@ p {
   #about .team-wrap .container section .portrait {
     width: 100%;
     max-width: 70%;
+    min-height: 300px;
   }
   #about .team-wrap .container section:nth-child(1) .portrait {
     background-image: url("../images/team/nicolae.jpg");
@@ -428,6 +433,8 @@ p {
   #about .team-wrap .container section .social {
     width: 100%;
     max-width: 28%;
+    min-height: 250px;
+    background-color: #F76F5F;
   }
   #about .team-wrap .container section .social ul {
     display: flex;
@@ -436,7 +443,7 @@ p {
     height: 100%;
   }
   #about .team-wrap .container section .social ul li {
-    background-color: #52ba7f;
+    background-color: #F76F5F;;
     border-bottom: 1px solid #32745f;
     flex: 1;
     display: -webkit-box;
@@ -450,7 +457,7 @@ p {
     color: var(--lightFontColor);
   }
   #about .team-wrap .container section .social ul li:nth-child(1) {
-    font-size: 1.2em;
+    font-size: 1.7em;
   }
   #about .team-wrap .container section .social ul li:nth-child(2) {
     font-size: 1.7em;
@@ -460,7 +467,7 @@ p {
   }
 
   #about .team-wrap .container section .social ul li:hover {
-    background-color: #429874;
+    background-color: #52ba98;
   }
 
 
@@ -822,7 +829,7 @@ p {
     grid-column: 1/12;
     padding: 1em 1em;
     margin-top: 1em;
-    background-color: #c86c61;
+    background-color: #F76F5F;
   }
   #comparison .side-by-side .conclusion * {
     color: var(--lightFontColor, #fff6a7);
@@ -1222,7 +1229,7 @@ p {
     flex-flow: column nowrap;
     width: 100vw;
     height: 100%;
-    padding: 0 1em 0 1em;
+    padding: 0 1em;
   }
   #log > .container > div .wrapper {
     max-width: 960px;
@@ -1509,6 +1516,7 @@ p {
     flex: 1;
     margin: 0 5px;
     background-color: white;
+    position: relative;
   }
   .submit-btn button {
     position: absolute;
@@ -1563,6 +1571,9 @@ p {
 
 
   @media screen and (max-width: 800px) {
+    header .mobile-nav li {
+      position: relative;
+    }
     header .mobile-nav li:hover::after {
       height: 100%;
     }
@@ -1647,6 +1658,12 @@ p {
       z-index: 1;
       transition: all 0.5s;
     }
+
+
+    #about .team-wrap .container section .quote * {
+      font-size: 1.2em;
+    }
+
 
     #mgp > .container .row2 {
       padding: 0.5em;
@@ -1863,6 +1880,44 @@ p {
     }
   }
 
+@media screen and (max-width: 650px) {
+  #about .team-wrap .container section .social ul li * {
+    font-size: 1em;
+    padding: 0;
+    margin: 0 auto;
+  }
+  #about .team-wrap .container section .social span {
+    display: none;
+  }
+  #about .team-wrap .container section .social {
+    max-width: 10%;
+  }
+  #about .team-wrap .container section .bio {
+    max-width: 88%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #about .team-wrap .container section {
+    flex-wrap: wrap;
+  }
+  #about .team-wrap .container section .quote {
+    display: none;
+  }
+  #about .team-wrap .container section .portrait {
+    max-width: 100%;
+  }
+  #about .team-wrap .container section .social {
+    max-width: 100%;
+    min-height: 50px;
+  }
+  #about .team-wrap .container section .social ul {
+    flex-direction: row;
+  }
+  #about .team-wrap .container section .bio {
+    max-width: 100%;
+  }
+}
 
 
 /* EFFECTS */
@@ -2264,5 +2319,5 @@ p {
   }
 
   .about-row .quick-links .link label:hover {
-    text-decoration: underline;;
+    text-decoration: underline;
   }
