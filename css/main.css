@@ -384,19 +384,19 @@ p {
   }
   #about .team-wrap .container section:nth-child(1) .portrait {
     background-image: url("../images/team/modou.jpg");
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
   }
   #about .team-wrap .container section:nth-child(2) .portrait {
     background-image: url("../images/team/adam.jpg");
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
   }
   #about .team-wrap .container section:nth-child(3) .portrait {
     background-image: url("../images/team/daniel.jpg");
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
   }
