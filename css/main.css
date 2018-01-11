@@ -1555,9 +1555,11 @@ a:visited {
     display: -ms-box;
     display: -webkit-flex;
     display: flex;
+    flex-shrink: 1;
   }
   .contact form {
     width: 100%;
+    max-width: 500px;
   }
   .contact form fieldset{
     display: -webkit-box;
@@ -1565,6 +1567,7 @@ a:visited {
     display: -webkit-flex;
     display: flex;
     justify-content: flex-end;
+    width: 100%;
   }
   .contact-title {
     text-align: right;
@@ -1585,12 +1588,12 @@ a:visited {
     display: -ms-box;
     display: -webkit-flex;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
   }
   footer .contact form .name input {
     font-family: 'Wellfleet', cursive;
+    flex: 1;
   }
   footer .contact form .email{
     display: -webkit-box;
@@ -1800,7 +1803,7 @@ a:visited {
 
     footer .about-row > .contact {
       overflow: hidden;
-      position: fixed;
+      position: absolute;
       bottom: 280px;
       background-color: rgba(244, 244, 244, 0.4);
       height: 100%;
@@ -1813,13 +1816,11 @@ a:visited {
     }
     footer .about-row > .contact > form {
       align-self: center;
-      width: auto;
       padding: 0.5em;
       background-color: #F76F5F;
     }
     footer .about-row > .contact > form fieldset {
       height: 100%;
-      width: auto;
     }
     footer .about-row > .contact > form fieldset .contact-title {
       display: none;
