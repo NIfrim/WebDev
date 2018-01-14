@@ -2062,6 +2062,13 @@ a:visited {
   #about .team-wrap .container section .bio {
     max-width: 100%;
   }
+
+  #glossary .container {
+    padding: 0;
+  }
+  #glossary .container > div {
+    padding: 0;
+  }
 }
 
 
