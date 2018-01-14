@@ -1387,14 +1387,23 @@ a:visited {
   }
   #log > .container > .row1 > .wrapper h1 {
     text-decoration: underline;
+    align-self: center;
   }
   #log > .container > div > .wrapper h2 {
-    margin-left: 1em;
+    align-self: center;
+  }
+  #log > .container > div > .wrapper h3 {
     align-self: flex-start;
+    margin-left: 3em;
   }
   #log > .container > div > .wrapper p {
     margin-left: 3em;
     align-self: flex-start;
+  }
+  #log > .container > div > .wrapper code {
+    font-size: 1.3em;
+    background-color: #52ba98;
+    color: var(--lightFontColor);
   }
 
   #log > .container > .row2 {
@@ -1420,6 +1429,15 @@ a:visited {
     background-color: #52ba98;
   }
   #log > .container .row4 .wrapper > * {
+    padding:  0.5em;
+    color: var(--lightFontColor, #fff6a7);
+  }
+
+  #log > .container > .row5 {
+    background-color: #cf5d50;
+    height: 100%;
+  }
+  #log > .container .row5 .wrapper > * {
     padding:  0.5em;
     color: var(--lightFontColor, #fff6a7);
   }
