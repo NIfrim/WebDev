@@ -2137,7 +2137,7 @@ a:visited {
   }
 
   /* Effect when clicken */
-  #glossary .job-terms #crm[type=checkbox]:checked ~ div:nth-of-type(2),
+  #glossary .job-terms #crm[type=checkbox]:checked ~ div:nth-of-type(1),
   #glossary .job-terms #syntax[type=checkbox]:checked ~ div:nth-of-type(2),
   #glossary .job-terms #fonts[type=checkbox]:checked ~ div:nth-of-type(3),
   #glossary .job-terms #w3c[type=checkbox]:checked ~ div:nth-of-type(4),
