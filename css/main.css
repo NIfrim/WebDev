@@ -2010,6 +2010,7 @@ a:visited {
 
   /* MAIN SECTION */
   #about-page[type=radio]:checked ~ #about {
+      height: fit-content !important;
     height: 100%;
     transition: height 1s .5s;
   }
