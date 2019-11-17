@@ -2019,6 +2019,7 @@ a:visited {
     transition: height .5s;
   }
   #glossary-page[type=radio]:checked ~ #glossary {
+    height: fit-content !important;
     height: 100%;
     transition: height 1s .5s;
   }
@@ -2027,6 +2028,7 @@ a:visited {
     transition: height .5s;
   }
   #comparison-page[type=radio]:checked ~ #comparison {
+    height: fit-content !important;
     height: 100%;
     transition: height 1s .5s;
   }
@@ -2035,6 +2037,7 @@ a:visited {
     transition: height .5s;
   }
   #resources-page[type=radio]:checked ~ #resources {
+    height: fit-content !important;
     height: 100%;
     transition: height 1s .5s;
   }
@@ -2043,6 +2046,7 @@ a:visited {
     transition: height .5s;
   }
   #mgp-page[type=radio]:checked ~ #mgp {
+    height: fit-content !important;
     height: 100%;
     transition: height 1s .5s;
   }
@@ -2051,6 +2055,7 @@ a:visited {
     transition: height .5s;
   }
   #log-page[type=radio]:checked ~ #log {
+    height: fit-content !important;
     height: 100%;
     transition: height 1s .5s;
   }
